@@ -17,7 +17,7 @@ def create_llama_index(documents):
     return llama_index
 
 def retrieve_documents(llama_index, query, k=5):
-    retrieved_doc_ids = llama_index.search(query, k=k)c
+    retrieved_doc_ids = llama_index.search(query, k=k)
     return retrieved_doc_ids
 
 def generate_responses(retrieved_docs, queries):
